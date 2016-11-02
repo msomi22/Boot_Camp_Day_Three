@@ -16,11 +16,17 @@ class BinarySearch(list):
         end = self.list_length * self.step
         
         for i in range(self.step, end+1, self.step):
-            self.append(i)
+            self.append(i)  #  append the elements from  interval to listlen
             
     @property
     def length(self):
         """
+        Python has a great concept called property, 
+        which makes the life of an object oriented programmer much simpler.
+        It can be used as a getter and a setter
+
+        In this case we use it to get the length
+
         Return the length of the list generated (i.e total number of elements)
         """
         return len(self)
